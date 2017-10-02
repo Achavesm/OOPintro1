@@ -13,9 +13,7 @@ public class Equilater extends Triangle {
 	 * @param base
 	 * @param height
 	 */
-	public Equilater(double base, double height) {
-		super(base, height);
-	}
+
 
 	/* (non-Javadoc)
 	 * @see org.escoladeltreball.oopintro1.Figure#perimeter()
@@ -23,6 +21,17 @@ public class Equilater extends Triangle {
 	@Override
 	public double perimeter() {
 		return super.base * 3;
+	}
+
+	/**
+	 * @param base
+	 * @param side1
+	 * @param side2
+	 * @param height
+	 */
+	public Equilater(double base, double height) {
+		super(base, base, base, height);
+		// TODO Auto-generated constructor stub
 	}
 
 }

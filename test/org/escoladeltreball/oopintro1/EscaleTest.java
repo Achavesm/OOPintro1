@@ -38,7 +38,7 @@ public class EscaleTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		escale = new Escale(15, 5);
+		escale = new Escale(15, 5, 3, 10);
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class EscaleTest {
 	 */
 	@Test
 	public final void testPerimeter() {
-		assertEquals(50.0, escale.perimeter(), 1.0e-4);
+		assertEquals(23.0, escale.perimeter(), 1.0e-4);
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class EscaleTest {
 	 */
 	@Test
 	public final void testArea() {
-		assertEquals(37.5, escale.area(), 1.0e-4);
+		assertEquals(75, escale.area(), 1.0e-4);
 	}
 
 }
